@@ -29,6 +29,9 @@ body {
 }
 
 .header img {
+    position: fixed;
+    top: 10px;
+    left: 10px;
     height: 60px;
 }
 
@@ -49,7 +52,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background: #ecf0f1;
-    color: #2c3e50;
+    color: #292210;
 }
 
 h1 {
@@ -66,4 +69,125 @@ h2 {
     color: #7f8c8d;
     font-weight: normal;
     letter-spacing: 2px;
+}
+
+.sobre {
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Fundação e Estrutura */
+.fundacao {
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.fundacao h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.fundacao p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Galeria de Serviços */
+.galeria {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.galeria-grid .item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria-grid .item:hover {
+    transform: translateY(-5px);
+}
+
+.galeria-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.galeria-grid span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Contato rápido */
+.contato-home {
+    max-width: 600px;
+    margin: 60px auto 80px;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contato-home h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.contato-home p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.contato-home a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contato-home a:hover {
+    text-decoration: underline;
 }
