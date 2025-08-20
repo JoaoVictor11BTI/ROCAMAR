@@ -1,66 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rocamar</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocamar | Mármores e Granitos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="header">
-    <header>
-        <img src="./imgs/logo-rocamar.png" alt="logo rocamar">
-        <nav>
-            <ul>
-                <li><a href="./Sobre/index.html">Sobre a Empresa</a></li>
-                <li><a href="./Serviços/index.html">Nossos Serviços</a></li>
-                <li><a href="./Materiais/index.html">Nossos Materiais</a></li>
-                <li><a href="./Contato/index.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="./imgs/logo-rocamar.png" alt="Logo Rocamar" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./Sobre/index.html">Sobre</a></li>
+          <li><a href="./Serviços/index.html">Galeria</a></li>
+          <li><a href="./Materiais/index.html">Materiais</a></li>
+          <li><a href="./Contato/index.html">Contato</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <h1>ROCAMAR</h1>
-    <h2>MÁRMORES E GRANITOS</h2>
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-text">
+      <h1>Rocamar</h1>
+      <h2>Mármores e Granitos</h2>
+      <a href="#" class="btn" id="openModal">Solicite um Orçamento</a>
+    </div>
+  </section>
 
-    <section class="sobre">
-        <h2>Sobre a Rocamar</h2>
-        <p>Seja bem vindo à Rocamar. Somos um grupo com mais de 50 anos de experiência no mercado de Mármores, Granitos e pedras ornamentais. Atendemos obras de todos os portes, desde reformas até edifícios inteiros, sendo especialistas em serviços de alto padrão, pisos com veios casados, tampos com cubas em mármore entre outros.</p>
-    
-        <p>Temos maquinários para a execução de qualquer tipo de serviço, inclusive peças curvas ou desenhos em mármore, que são feitos com perfeição graças à tecnologia de corte com jato d'água. Com pessoal próprio para entrega e instalação, atendemos desde a medição, elaboração de projeto e fornecimento de material, até a instalação final do serviço.</p>
-    
-        <p>Seja você um arquiteto, uma construtora ou o cliente final, entre em contato conosco, temos soluções para seu projeto que caberão em seu orçamento e superarão suas expectativas.</p>
-    
-        <p>Venha conhecer nossas instalações e tomar um cafezinho enquanto conversamos sobre seu projeto. Embora estejamos na cidade de São Paulo, atendemos obras no Brasil inteiro.</p>
-    </section>    
+  <!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Solicite seu Orçamento</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <input type="text" placeholder="Telefone" required>
+        <textarea placeholder="Descreva seu projeto" required></textarea>
+        <button type="submit" class="btn">Enviar Pedido</button>
+      </form>
+    </div>
+  </div>
 
-    <!-- Seção: Fundação e Estrutura -->
-<section class="fundacao">
+   <!-- Sobre -->
+   <section class="sobre">
+    <h2>Sobre a Rocamar</h2>
+    <p>Com mais de 50 anos de experiência, a Rocamar é referência em Mármores, Granitos e pedras ornamentais. Atendemos desde pequenas reformas até edifícios completos, oferecendo serviços de alto padrão como pisos com veios casados, tampos com cubas em mármore e muito mais.</p>
+    <p>Com tecnologia avançada, como corte a jato d’água, e equipe especializada, garantimos qualidade em cada etapa: medição, projeto, fornecimento e instalação.</p>
+  </section>
+
+  <!-- História -->
+  <section class="fundacao">
     <h2>Nossa História</h2>
-    <p>Fundada em 1964, sob o nome de Villaverde Mármores, a Rocamar se consolidou como referência em serviços de alto padrão em mármores e granitos. Localizada na Rua Carajuva, 18, Vila Andrade, nossa fábrica conta com estrutura moderna, estoque amplo — incluindo materiais nacionais e exóticos — e uma equipe especializada pronta para atender projetos de qualquer porte com excelência.</p>
-</section>
+    <p>Fundada em 1964 como Villaverde Mármores, a Rocamar se consolidou como referência em serviços de alto padrão. Nossa fábrica, localizada em São Paulo, conta com maquinário moderno e materiais exclusivos, nacionais e importados, para atender projetos de qualquer porte.</p>
+  </section>
 
-<!-- Seção: Galeria de Serviços -->
-<section class="galeria">
-    <h2>Nossos Serviços</h2>
+  <!-- Galeria -->
+  <section class="galeria">
+    <h2>Galeria</h2>
     <div class="galeria-grid">
-        <div class="item"><img src="imgs/servico1.PNG" alt="Escadas em mármore"><span>Escadas em Mármore</span></div>
-        <div class="item"><img src="imgs/servico2.jpg" alt="Veios Casados"><span>Veios Casados</span></div>
-        <div class="item"><img src="imgs/servico3.jpg" alt="Corte a jato d'água"><span>Corte Water-Jet</span></div>
-        <div class="item"><img src="imgs/servico4.jpg" alt="Peças curvas customizadas"><span>Peças Curvas Personalizadas</span></div>
+      <div class="item"><img src="imgs/servico1.PNG" alt=""><span>Escadas em Mármore</span></div>
+      <div class="item"><img src="imgs/servico2.jpg" alt=""><span>Veios Casados</span></div>
+      <div class="item"><img src="imgs/servico3.jpg" alt=""><span>Corte Water-Jet</span></div>
+      <div class="item"><img src="imgs/servico4.jpg" alt=""><span>Peças Curvas</span></div>
     </div>
-    <p>Confira também nossa <a href="https://www.instagram.com/rocamarmarmores" target="_blank">galeria no Instagram</a> para mais inspirações.</p>
-</section>
+    <p>Veja mais no <a href="https://www.instagram.com/rocamarmarmores" target="_blank">Instagram</a></p>
+  </section>
 
-<!-- Seção: Contato rápido -->
-<section class="contato-home">
+  <!-- Footer -->
+  <footer>
     <h2>Fale Conosco</h2>
     <p><strong>Telefone:</strong> (11) 5519-3070</p>
     <p><strong>E-mail:</strong> <a href="mailto:vendas@rocamar.com.br">vendas@rocamar.com.br</a></p>
-    <p><strong>Endereço:</strong> Rua Carajuva, 18 – Parque Rebouças, São Paulo – SP</p>
-</section>
+    <p><strong>Endereço:</strong> Rua Carajuva, 18 – São Paulo – SP</p>
+    <a href="./Contato/index.html" class="btn">Entre em Contato</a>
+    <br> <br>
+    <p>© 2025 Rocamar – Todos os direitos reservados</p>
+  </footer>
 
 </body>
 </html>

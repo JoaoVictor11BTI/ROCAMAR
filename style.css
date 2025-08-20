@@ -2,192 +2,201 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-body {
-    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background: #f7f7f7;
     color: #333;
-    text-align: center;
-}
-
-.header {
+  }
+  
+  /* Header */
+  .header {
     background: #292210;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.header header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ecf0f1;
-    letter-spacing: 2px;
-}
-
-.header img {
+    padding: 15px 0;
     position: fixed;
-    top: 10px;
-    left: 10px;
-    height: 60px;
-}
-
-nav ul {
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
-}
-
-nav ul li a {
+  }
+  
+  .nav-links a {
     text-decoration: none;
     color: #ecf0f1;
-    font-size: 1rem;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: background 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background: #ecf0f1;
-    color: #292210;
-}
-
-h1 {
-    margin-top: 40px;
-    font-size: 3rem;
-    color: #2c3e50;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #d4af37;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url("https://cobral.com.br/wp-content/uploads/2022/01/marmore-ou-granito-scaled.jpg") center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-text h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
     letter-spacing: 3px;
-    text-transform: uppercase;
-}
+  }
 
-h2 {
+  .hero-text h2 {
+    color: #fff;
+  }
+  
+  .hero-text h2 {
     font-size: 1.5rem;
-    margin-top: 10px;
-    color: #7f8c8d;
-    font-weight: normal;
-    letter-spacing: 2px;
-}
-
-.sobre {
-    margin: 60px auto;
-    padding: 40px;
-    background: #ffffff;
-    text-align: center;
-    line-height: 1.8;
-}
-
-.sobre h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 25px;
-    color: #2c3e50;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.sobre p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #444;
-}
-
-/* Fundação e Estrutura */
-.fundacao {
-    margin: 40px auto;
-    padding: 40px 20px;
-    background: #ffffff;
+    margin: 15px 0;
+    font-weight: 400;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #d4af37;
+    color: #292210;
+    font-weight: bold;
+    text-decoration: none;
     border-radius: 8px;
-    line-height: 1.6;
-}
-
-.fundacao h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.fundacao p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-/* Galeria de Serviços */
-.galeria {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.galeria h2 {
-    font-size: 1.8rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
-}
-
-.galeria-grid .item {
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #292210;
+    color: #fff;
+  }
+  
+  /* Seções */
+  section {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 40px 20px;
     background: #fff;
-    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5e9ce4;
+  }
+  
+  /* Galeria */
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+  }
+  
+  .galeria-grid .item {
+    background: #fafafa;
+    padding: 10px;
     border-radius: 8px;
     transition: transform 0.3s;
-}
-
-.galeria-grid .item:hover {
+  }
+  
+  .galeria-grid .item:hover {
     transform: translateY(-5px);
-}
-
-.galeria-grid img {
+  }
+  
+  .galeria-grid img {
     width: 100%;
     border-radius: 6px;
-}
-
-.galeria-grid span {
-    display: block;
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #444;
-}
-
-/* Contato rápido */
-.contato-home {
-    max-width: 600px;
-    margin: 60px auto 80px;
-    padding: 30px 20px;
-    background: #ffffff;
-    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #292210;
+    color: #fff;
     text-align: center;
-}
+    padding: 15px;
+    margin-top: 40px;
+  }
 
-.contato-home h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #2c3e50;
-}
+  .modal {
+    display: none; /* escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+  }
 
-.contato-home p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-.contato-home a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contato-home a:hover {
-    text-decoration: underline;
-}
+  .modal.is-open {
+    display: flex;            /* só abre quando tiver esta classe */
+  }
+  
+  /* Conteúdo do modal */
+  .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Botão fechar */
+  .close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Inputs do formulário */
+  .modal-content input,
+  .modal-content textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .modal-content textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+  }
