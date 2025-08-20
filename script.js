@@ -27,3 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape') closeModal();
     });
   });
+
+  document.getElementById('phoneForm').addEventListener('submit', function (event) {
+    const phoneInput = document.getElementById('phone').value;
+    const phonePattern = /^\+55\s\d{2}\s\d{5}-\d{4}$/; // Example for Brazilian phone numbers
+
+    if (!phonePattern.test(phoneInput)) {
+      event.preventDefault();
+      alert('Please enter a valid phone number in the format: +55 11 99999-9999');
+    }
+  });

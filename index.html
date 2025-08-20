@@ -40,8 +40,8 @@
       <h2>Solicite seu Orçamento</h2>
       <form>
         <input type="text" placeholder="Seu nome" required>
-        <input type="email" placeholder="Seu e-mail" required>
-        <input type="text" placeholder="Telefone" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+55 11 12345-6789" required>
         <textarea placeholder="Descreva seu projeto" required></textarea>
         <button type="submit" class="btn">Enviar Pedido</button>
       </form>
