@@ -67,3 +67,29 @@ h2 {
     font-weight: normal;
     letter-spacing: 2px;
 }
+
+ 
+  /* Galeria */
+  .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+  }
+  
+  .galeria-grid .item {
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .galeria-grid .item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .galeria-grid img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  
