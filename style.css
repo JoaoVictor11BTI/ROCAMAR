@@ -109,6 +109,70 @@
     margin-bottom: 20px;
     color: #5e9ce4;
   }
+
+  .sobre, .fundacao {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+  }
+  
+  .sobre h2, .fundacao h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .sobre h2::after, .fundacao h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e67e22;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .sobre p, .fundacao p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin: 30px 0;
+    list-style: none;
+  }
+  
+  .lista-servicos li {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .lista-servicos li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  }
+  
+  .lista-servicos h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #e67e22;
+  }
+  
+  .lista-servicos p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
  
   /* Footer */
   footer {
