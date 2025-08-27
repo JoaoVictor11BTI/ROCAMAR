@@ -111,9 +111,13 @@
   }
 
   .sobre, .fundacao {
-    padding: 60px 20px;
+    padding: 10px 20px;
     text-align: center;
     background: #f9f9f9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
   }
   
   .sobre h2, .fundacao h2 {
@@ -123,7 +127,7 @@
     position: relative;
   }
   
-  .sobre h2::after, .fundacao h2::after {
+  .sobre h2::after, .fundacao h2::after, .oque-fazemos h2::after {
     content: "";
     display: block;
     width: 80px;
@@ -133,26 +137,20 @@
     border-radius: 2px;
   }
   
-  .sobre p, .fundacao p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
   .lista-servicos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
-    padding: 0;
-    margin: 30px 0;
     list-style: none;
+    padding: 0;
   }
   
   .lista-servicos li {
     background: #fff;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 12px;
+    font-size: 1.1rem;
+    color: #333;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -160,12 +158,6 @@
   .lista-servicos li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-  }
-  
-  .lista-servicos h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #e67e22;
   }
   
   .lista-servicos p {
@@ -244,3 +236,115 @@
   footer a{
     color: #ffffff;
   }
+
+  .sobre, .oque-fazemos {
+    padding: 10px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .sobre h2, .oque-fazemos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    position: relative;
+  }
+  
+  .sobre h2::after, .oque-fazemos h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e67e22;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+
+  .titulo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .o-que-fazemos .icone {
+    font-size: 2.2rem;
+    display: inline-block;
+}
+
+  .o-que-fazemos {
+    padding: 50px 20px;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .topicos {
+    flex: 1;
+  }
+  
+  .topicos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .topicos .item {
+    background: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .o-que-fazemos .carrossel {
+    width: 500px;           /* largura do carrossel */
+    height: 500px;          /* altura do carrossel */
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+  }
+  
+  .o-que-fazemos .carrossel img {
+    width: 100%;            /* ocupa toda a largura do carrossel */
+    height: 100%;           /* ocupa toda a altura */
+    object-fit: cover;      /* mantém proporção e preenche o espaço */
+    position: absolute;     /* todas as imagens ficam sobrepostas */
+    top: 0;
+    left: 0;
+    opacity: 0;             /* invisível por padrão */
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* animação para mostrar cada imagem */
+  .o-que-fazemos .carrossel img:nth-child(1) { animation: slide 9s infinite; }
+  .o-que-fazemos .carrossel img:nth-child(2) { animation: slide 9s infinite 3s; }
+  .o-que-fazemos .carrossel img:nth-child(3) { animation: slide 9s infinite 6s; }
+  
+  @keyframes slide {
+    0%, 33.33% { opacity: 1; }
+    33.34%, 100% { opacity: 0; }
+  }
+  
+  .o-que-fazemos .topicos .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left; /* garante que o texto fique alinhado à esquerda */
+}
