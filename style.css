@@ -1,56 +1,58 @@
+@import url(./global/global.css);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background-image: url(https://cdn.leroymerlin.com.br/products/10_placas_revestimento_porcelanato_marmore_branco_rajado_lami_1571347487_e3c9_600x600.jpg);
     color: #333;
-  }
-  
-  /* Header */
-  .header {
+}
+
+/* Header */
+.header {
     background: #292210;
     padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 100;
-  }
-  
-  .container {
-    width: 90%;
-    margin: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+.logo {
     height: 50px;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: #ecf0f1;
     font-weight: 600;
     transition: 0.3s;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #d4af37;
-  }
-  
-  /* Hero https://cobral.com.br/wp-content/uploads/2022/01/marmore-ou-granito-scaled.jpg */
-  .hero {
+}
+
+/* Hero */
+.hero {
     background: url("https://cobral.com.br/wp-content/uploads/2022/01/marmore-ou-granito-scaled.jpg") center/cover no-repeat;
     height: 80vh;
     display: flex;
@@ -58,25 +60,22 @@
     justify-content: center;
     text-align: center;
     color: #fff;
-  }
-  
-  .hero-text h1 {
+}
+
+.hero-text h1 {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-  }
+}
 
-  .hero-text h2 {
-    color: #fff;
-  }
-  
-  .hero-text h2 {
+.hero-text h2 {
     font-size: 1.5rem;
     margin: 15px 0;
     font-weight: 400;
-  }
-  
-  .btn {
+    color: #fff;
+}
+
+.btn {
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
@@ -86,15 +85,15 @@
     text-decoration: none;
     border-radius: 8px;
     transition: 0.3s;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #857d6B;
     color: #fff;
-  }
-  
-  /* Seções */
-  section {
+}
+
+/* Seções */
+section {
     max-width: 1100px;
     margin: 80px auto;
     padding: 40px 20px;
@@ -102,15 +101,15 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-  }
-  
-  section h2 {
+}
+
+section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #5e9ce4;
-  }
+}
 
-  .sobre, .fundacao {
+.sobre, .fundacao, .oque-fazemos {
     padding: 10px 20px;
     text-align: center;
     background: #f9f9f9;
@@ -118,16 +117,16 @@
     line-height: 1.8;
     margin-bottom: 15px;
     color: #555;
-  }
-  
-  .sobre h2, .fundacao h2 {
+}
+
+.sobre h2, .fundacao h2, .oque-fazemos h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #2c3e50;
     position: relative;
-  }
-  
-  .sobre h2::after, .fundacao h2::after, .oque-fazemos h2::after {
+}
+
+.sobre h2::after, .fundacao h2::after, .oque-fazemos h2::after {
     content: "";
     display: block;
     width: 80px;
@@ -135,17 +134,17 @@
     background: #e67e22;
     margin: 10px auto 0;
     border-radius: 2px;
-  }
-  
-  .lista-servicos {
+}
+
+.lista-servicos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
     list-style: none;
     padding: 0;
-  }
-  
-  .lista-servicos li {
+}
+
+.lista-servicos li {
     background: #fff;
     padding: 15px 20px;
     border-radius: 12px;
@@ -153,45 +152,51 @@
     color: #333;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .lista-servicos li:hover {
+}
+
+.lista-servicos li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-  }
-  
-  .lista-servicos p {
+}
+
+.lista-servicos p {
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
-  }
- 
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background: #292210;
     color: #fff;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
-  }
+}
 
-  .modal {
-    display: none; /* escondido por padrão */
+footer a {
+    color: #ffffff;
+}
+
+/* Modal */
+.modal {
+    display: none;
     position: fixed;
     z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background: rgba(0,0,0,0.6);
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .modal.is-open {
-    display: flex;            /* só abre quando tiver esta classe */
-  }
-  
-  /* Conteúdo do modal */
-  .modal-content {
+.modal.is-open {
+    display: flex;
+}
+
+.modal-content {
     background: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -200,151 +205,115 @@
     text-align: center;
     position: relative;
     animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  /* Botão fechar */
-  .close {
+}
+
+.close {
     position: absolute;
-    top: 10px; right: 15px;
+    top: 10px;
+    right: 15px;
     font-size: 2rem;
     cursor: pointer;
     color: #333;
-  }
-  
-  /* Inputs do formulário */
-  .modal-content input,
-  .modal-content textarea {
+}
+
+.modal-content input,
+.modal-content textarea {
     width: 100%;
     margin: 10px 0;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 1rem;
-  }
-  
-  .modal-content textarea {
+}
+
+.modal-content textarea {
     resize: none;
     height: 100px;
-  }
-  
-  /* Animação */
-  @keyframes fadeIn {
+}
+
+/* Animação */
+@keyframes fadeIn {
     from {opacity: 0; transform: scale(0.9);}
     to {opacity: 1; transform: scale(1);}
-  }
+}
 
-  footer a{
-    color: #ffffff;
-  }
-
-  .sobre, .oque-fazemos {
-    padding: 10px 20px;
-    text-align: center;
+/* O que fazemos */
+.o-que-fazemos {
+    padding: 50px 20px;
     background: #f9f9f9;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 15px;
-    color: #555;
-  }
-  
-  .sobre h2, .oque-fazemos h2 {
+}
+
+.o-que-fazemos .topicos {
+    flex: 1;
+}
+
+.o-que-fazemos .topicos h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #2c3e50;
-    position: relative;
-  }
-  
-  .sobre h2::after, .oque-fazemos h2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background: #e67e22;
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
+}
 
-  .titulo-box {
+.o-que-fazemos .topicos .item,
+.o-que-fazemos .item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 15px;
-  }
-  
-  .o-que-fazemos .icone {
+    gap: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.o-que-fazemos .topicos .item:hover,
+.o-que-fazemos .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.o-que-fazemos .icone {
     font-size: 2.2rem;
     display: inline-block;
 }
 
-  .o-que-fazemos {
-    padding: 50px 20px;
-    background: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .conteudo {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .topicos {
-    flex: 1;
-  }
-  
-  .topicos h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-  }
-  
-  .topicos .item {
-    background: #fff;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .o-que-fazemos .carrossel {
-    width: 500px;           /* largura do carrossel */
-    height: 500px;          /* altura do carrossel */
+.o-que-fazemos .carrossel {
+    width: 500px;
+    height: 500px;
     overflow: hidden;
     position: relative;
     margin: auto;
     border-radius: 10px;
-  }
-  
-  .o-que-fazemos .carrossel img {
-    width: 100%;            /* ocupa toda a largura do carrossel */
-    height: 100%;           /* ocupa toda a altura */
-    object-fit: cover;      /* mantém proporção e preenche o espaço */
-    position: absolute;     /* todas as imagens ficam sobrepostas */
+}
+
+.o-que-fazemos .carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;             /* invisível por padrão */
+    opacity: 0;
     transition: opacity 1s ease-in-out;
-  }
-  
-  /* animação para mostrar cada imagem */
-  .o-que-fazemos .carrossel img:nth-child(1) { animation: slide 9s infinite; }
-  .o-que-fazemos .carrossel img:nth-child(2) { animation: slide 9s infinite 3s; }
-  .o-que-fazemos .carrossel img:nth-child(3) { animation: slide 9s infinite 6s; }
-  
-  @keyframes slide {
+}
+
+.o-que-fazemos .carrossel img:nth-child(1) { animation: slide 9s infinite; }
+.o-que-fazemos .carrossel img:nth-child(2) { animation: slide 9s infinite 3s; }
+.o-que-fazemos .carrossel img:nth-child(3) { animation: slide 9s infinite 6s; }
+
+@keyframes slide {
     0%, 33.33% { opacity: 1; }
     33.34%, 100% { opacity: 0; }
-  }
-  
-  .o-que-fazemos .topicos .item {
+}
+
+.titulo-box {
     display: flex;
     align-items: center;
-    gap: 10px;
-    text-align: left; /* garante que o texto fique alinhado à esquerda */
+    gap: 15px;
+}
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
