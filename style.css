@@ -12,7 +12,6 @@ body {
     color: #333;
 }
 
-/* Header */
 .header {
     background: #292210;
     padding: 15px 0;
@@ -51,7 +50,6 @@ body {
     color: #d4af37;
 }
 
-/* Hero */
 .hero {
     background: url("https://cobral.com.br/wp-content/uploads/2022/01/marmore-ou-granito-scaled.jpg") center/cover no-repeat;
     height: 80vh;
@@ -92,7 +90,6 @@ body {
     color: #fff;
 }
 
-/* Seções */
 section {
     max-width: 1100px;
     margin: 80px auto;
@@ -165,7 +162,6 @@ section h2 {
     line-height: 1.5;
 }
 
-/* Footer */
 footer {
     background: #292210;
     color: #fff;
@@ -178,7 +174,6 @@ footer a {
     color: #ffffff;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -231,13 +226,11 @@ footer a {
     height: 100px;
 }
 
-/* Animação */
 @keyframes fadeIn {
     from {opacity: 0; transform: scale(0.9);}
     to {opacity: 1; transform: scale(1);}
 }
 
-/* O que fazemos */
 .o-que-fazemos {
     padding: 50px 20px;
     background: #f9f9f9;

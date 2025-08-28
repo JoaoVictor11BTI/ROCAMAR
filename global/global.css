@@ -165,7 +165,6 @@ section h2 {
     line-height: 1.5;
 }
 
-/* Footer */
 footer {
     background: #292210;
     color: #fff;
@@ -178,7 +177,6 @@ footer a {
     color: #ffffff;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -231,13 +229,11 @@ footer a {
     height: 100px;
 }
 
-/* Animação */
 @keyframes fadeIn {
     from {opacity: 0; transform: scale(0.9);}
     to {opacity: 1; transform: scale(1);}
 }
 
-/* O que fazemos */
 .o-que-fazemos {
     padding: 50px 20px;
     background: #f9f9f9;
